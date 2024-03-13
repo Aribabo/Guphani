@@ -23,7 +23,7 @@
 
  
 <h3>📌 사용 데이터셋 </h3>  
-<img src="https://github.com/Aribabo/Guphani/assets/137020870/8d8dfb32-08cd-455b-a0ce-d69ba6b2adcc" width="500" height="300">
+<img src="https://github.com/Aribabo/Guphani/assets/137020870/8d8dfb32-08cd-455b-a0ce-d69ba6b2adcc">
 
 
 <h3>🪄 기능 </h3>
@@ -59,7 +59,8 @@
 <img width="680" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/37606275-76b8-43e0-af9c-c0bc2656dbad"  height="500">
 
 * 119 문자 신고 및 사설 구급차 연락
-  <img width="907" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/01ad2f58-988a-4ee3-bdb9-72da3d6b985c">
+  <img width="898" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/5c99debc-5422-4808-aaa3-c0cc5bdcabe1">
+
 
 
 </p>
