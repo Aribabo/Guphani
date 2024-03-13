@@ -1,0 +1,13 @@
+@import url('../reset.css');
+@import url('./common.css');
+
+#adminNoticeList .list-table-wrap .top .btn-wrap a,
+#filstAidList .list-table-wrap .top .btn-wrap a{margin-right: 5px;}
+#adminnoticeModify #title,
+#adminnoticePost #title,
+#adminfirstAidModify #title,
+#adminfirstAidModify #youtube,
+#adminFirstAidForm #title {width: 100%;}
+
+/* #adminUserList .point-btn {display: inline-block;background: var(--point-color);width: 17%;border-radius: 50px;color: var(--white-color);line-height: 40px;height: 40px;box-sizing: border-box;font-size: 14px;font-weight: bold;} */
+/* #adminUserList .black-btn {display: inline-block;background: var(--black-color);width: 17%;border-radius: 50px;color: var(--white-color);line-height: 40px;height: 40px;box-sizing: border-box;font-size: 14px;font-weight: bold;text-align: center;} */

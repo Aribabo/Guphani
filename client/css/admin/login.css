@@ -1,0 +1,16 @@
+@import url('../admin/layout.css'); /*공통 css*/
+@import url('../admin/common.css'); /*공통 css*/
+
+/* 화면 2분할 */
+#adminLogin .flex{display: flex; height: 100vh;}
+
+/* 왼쪽 */
+#adminLogin .leftPart { width: 50%; background-color: var(--point-color); text-align: center;position: relative; border-top-right-radius: 100px ;}
+#adminLogin .logo { width: 200px; margin: 0 auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+/* 오른쪽*/
+#adminLogin .rightPart{width: 50%; }
+#adminLogin .input-wrap{width: 33%; margin: 0 auto; margin-top: 40vh; text-align: center;}
+#adminLogin .main-txt{ font-weight: bold; font-size:2.5rem ; margin-bottom: 1.428rem;}
+#adminLogin .red-font{ color: var(--point-color); margin-bottom:1.428rem ; display: none;}
+#adminLogin .input-area{margin-top: 1.071rem;}

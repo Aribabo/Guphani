@@ -1,0 +1,228 @@
+@import url('../reset.css'); /*리셋 css*/
+@import url('../common.css'); /*공통 css*/
+
+
+/* 공통 로고 컬러 */
+h1.logo.top .st0 {fill: #ff5e5e;}
+/* 공통 주소초기화 버튼 */
+.loca-btn-wrap{position: fixed; left: 50%; transform: translateX(-50%); top: 24.285rem; width: 100%; max-width: 768px; margin: 0 auto;}
+.location-btn{width: 2.857rem; height: 2.857rem; display: flex; justify-content: center; align-items: center; box-sizing: border-box; border-radius: 50px; background: var(--white-color); box-shadow: 0 0 0.714rem #0001; margin-left: 1.428rem;}
+.location-btn i {font-size: 1.857rem; color: var(--gray-color);}
+
+/* 헤더 영역 추가 */
+#emergencymap header{position: fixed;top:0;width: 100%; background: var(--white-color);}
+#emergencymap header .inner-header{height: 100%; display: flex;align-items: center;padding: 2.14rem 2.14rem;box-sizing: border-box;}
+#emergencymap header h1.logo{width: 4.375rem;}
+#emergencymap header .map-header-menu{margin-left:auto;}
+#emergencymap header .map-header-menu button.home{font-size: 2.142rem;color: var(--dark-gray-text);}
+#emergencymap header .map-header-menu button.ham{font-size: 2.142rem;color: var(--dark-gray-text);}
+#emergencymap header .map-header-menu button + button{margin-left:1.44rem;}
+
+/* 지도 리스트 영역 추가 */
+#emergencymap .inner-wrap{position: relative; max-width: 768px;}
+#emergencymap main{margin-top: 28.142rem;}
+#emergencymap header.basic{background: inherit; position: fixed; top: 0; width: 100%;}
+#emergencymap h2{margin-bottom: 1.428rem;}
+#emergencymap .search{padding: 0 2.857rem; position: fixed; top: 6.357rem; width: 100%; max-width: 768px; box-sizing: border-box;}
+#emergencymap .quick-ul{display: flex; align-items: center; margin-bottom: 0.714rem;}
+#emergencymap .quick-ul li{background: var(--white-color); border-radius:3.571rem; box-shadow: 0 0 0.357rem #0001; padding: 0.428rem 1.071rem; border: 1px solid var(--light-gray); cursor: pointer;}
+#emergencymap .quick-ul li.on{border:1px solid var(--point-color);}
+#emergencymap .quick-ul li.on button{color: var(--point-color);}
+#emergencymap .quick-ul li button{font-size: 0.928rem; color: var(--gray-color); display: block;}
+#emergencymap .quick-ul li + li{margin-left: 1.071rem;}
+
+#emergencymap .input-area{height: 3.571rem; line-height: 3.571rem; position: relative; background: var(--white-color); display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.714rem;}
+#emergencymap .input-area input[type='text']{border: 0px; outline: unset !important; width: 90%; }
+#emergencymap .input-area input[type='text']::placeholder{color: var(--light-gray); font-size: 1rem;}
+#emergencymap .input-area button{width: 10%; text-align: right; font-size: 1.428rem; color: var(--dark-gray);}
+
+#emergencymap .select-scroll{overflow-x: scroll; padding-bottom: 1.428rem;}
+#emergencymap .select-ul{display: flex; width: max-content;}
+#emergencymap .select-ul li{background: var(--point-color); padding: 8px 1.071rem; border-radius: 3.571rem;}
+#emergencymap .select-ul li + li{margin-left: 0.357rem;}
+#emergencymap .select-ul li span{margin-right: 0.714rem;}
+#emergencymap .select-ul li span,
+#emergencymap .select-ul li button{ color: var(--white-color); font-size: 1rem;}
+
+#emergencymap form{position: relative; left: 0; top: 0;}
+#emergencymap .modal-wrap{position: fixed; max-width: 768px; top: 23.571rem; left: 50%; transform: translateX(-50%); width: 100%; padding: 0 2.857rem; box-sizing: border-box; z-index: 101;}
+#emergencymap .select-box{background: var(--white-color); border: 1px solid var(--dark-gray); border-radius: 1.142rem; width: 100%; height: 21.642rem; box-shadow: 0 0 0.714rem #0001; overflow-y: scroll;}
+#emergencymap .select-box{display: none;}
+#emergencymap .select-box li{padding: 1.071rem 1.428rem; box-sizing: border-box; display: flex; align-items: center;}
+#emergencymap .select-box li label{display: block; width: 100%;}
+#emergencymap .select-box li + li{border-top: 1px solid var(--dark-gray);}
+
+#emergencymap .list{width: 100%; height: 90vh; border-radius: 3.571rem 3.571rem 0 0; background: var(--white-color); overflow: hidden; position: relative; z-index: 100;}
+#emergencymap .list .deco{padding: 1.428rem; box-sizing: border-box;}
+#emergencymap .list .deco span{width: 2.857rem; height: 0.5rem; border-radius: 1.428rem; background: var(--light-gray); display: block; margin: 0 auto;}
+#emergencymap .list-ul{height: calc(90vh - 47px); overflow-y: scroll;}
+#emergencymap .list-ul .no-data p{color: var(--gray-color); text-align: center; padding: 14.285rem;}
+#emergencymap .list-ul li{padding: 1.428rem; box-sizing: border-box;}
+#emergencymap .list-ul li.on{background: #f5f5f5 !important;}
+#emergencymap .list-ul li + li{border-top: 1px solid var(--dark-gray);}
+
+#emergencymap .name{font-size: 1.428rem; font-weight: bold; margin-bottom: 0.714rem;}
+#emergencymap .addr{font-size: 0.857rem; color: var(--dark-gray); margin-bottom: 1.071rem;}
+#emergencymap .util{display: flex;}
+#emergencymap .util span{padding: 0.471rem 1.428rem; border-radius: 50px; border: 1px solid var(--gray-color); color: var(--gray-color); font-size: 0.9rem; display: flex; align-items: center;}
+#emergencymap .util span i{color: var(--gray-color);}
+#emergencymap .util .bed{margin-right: 0.714rem; background: var(--gray-bg);}
+#emergencymap .util .bed.on{color: var(--point-color); border-color: var(--point-color); background: #FFF4F4;}
+
+
+/* 지도 디테일 영역 추가 */
+#emergencyDetail{position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  background: var(--white-color);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 768px;
+  display: none;
+  height: 100%;
+}
+#emergencyDetail .back-btn{position: fixed; left: 2.857rem; top: 3.857rem; border-radius: 50px; background: var(--white-color); color: var(--dark-gray); padding: 1.071rem 1.79rem; box-shadow: 0 0 0.714rem #0002; font-size: 1rem;}
+#emergencyDetail .back-btn button{display: flex; align-items: center; font-weight: 500; font-size: 1rem;}
+#emergencyDetail .back-btn i{font-size: 1.42rem; color: var(--gray-color);}
+#emergencyDetail .map-wrap{width: 100%; height: 24.857rem; background: var(--dark-gray);}
+#emergencyDetail .info-wrap{height: calc(100vh - 24.857rem); overflow-y: scroll;}
+#emergencyDetail .info-wrap section{padding: 0 2.857rem; box-sizing: border-box;}
+#emergencyDetail .info-wrap section .inner-sec{padding: 2.857rem 0;}
+#emergencyDetail .info-wrap section + section .inner-sec{border-top: 1px solid var(--dark-gray);}
+#emergencyDetail .name{font-size: 2.428rem; margin-bottom: 1.428rem;}
+#emergencyDetail .addr{font-size: 1.214rem; color: var(--gray-color); margin-bottom: 1.428rem;}
+#emergencyDetail .util{display: flex; margin-bottom: 2.857rem;}
+#emergencyDetail .util span{padding: 0.471rem 1.428rem; border-radius: 50px; border: 1px solid var(--gray-color); color: var(--gray-color); font-size: 0.9rem; display: flex; align-items: center;}
+#emergencyDetail .util span i{color: var(--gray-color);}
+#emergencyDetail .util .bed{margin-right: 0.714rem; background: var(--gray-bg);}
+#emergencyDetail .util .bed.on{color: var(--point-color); border-color: var(--point-color); background: #FFF4F4;}
+#emergencyDetail .sec-tit{font-size: 1.428rem; font-weight: 600; margin-bottom: 0.714rem;}
+#emergencyDetail .time-wrap{display: flex; justify-content: space-between; background: var(--gray-bg); padding: 1.428rem; box-sizing: border-box; border-radius: 0.714rem; margin-bottom: 0.714rem;}
+#emergencyDetail .time-wrap ul{width: 50%;}
+#emergencyDetail .time-wrap ul li + li{margin-top: 0.714rem;}
+#emergencyDetail .time-info{font-size: 1rem;}
+#emergencyDetail .basic-sec ul{display: flex; flex-wrap: wrap;}
+#emergencyDetail .basic-sec ul li{width: 50%;margin-top: 0.714rem;}
+#emergencyDetail .info-wrap section.bed-info{background: var(--gray-bg); padding-bottom: 5.285rem;}
+#emergencyDetail .bed-info .inner-sec{background: var(--gray-bg); border-top: 0px !important;}
+#emergencyDetail .bed-info li{display: flex; justify-content: space-between; padding: 1.071rem 0; border-bottom: 1px solid var(--light-gray);}
+#emergencyDetail .bed-info .on .txt{color: var(--point-color);}
+#emergencyDetail .call-btn{border-radius: 1.428rem 1.428rem 0 0; position: fixed; bottom: 0; box-shadow: 0 0 0.714rem #0002; z-index: 10;}
+#emergencyDetail section li,#emergencyDetail section span{font-size: 1.2rem;}
+
+
+
+/* 헤더 영역 추가 */
+#pharmacymap header{position: fixed;top:0;width: 100%; background: var(--white-color);}
+#pharmacymap header .inner-header{height: 100%; display: flex;align-items: center;padding: 2.14rem 2.14rem;box-sizing: border-box;}
+#pharmacymap header h1.logo{width: 4.375rem;}
+#pharmacymap header .map-header-menu{margin-left:auto;}
+#pharmacymap header .map-header-menu button.home{font-size: 2.142rem;color: var(--dark-gray-text);}
+#pharmacymap header .map-header-menu button.ham{font-size: 2.142rem;color: var(--dark-gray-text);}
+#pharmacymap header .map-header-menu button + button{margin-left:1.44rem;}
+
+/* 지도 리스트 영역 추가 */
+#pharmacymap{}
+#pharmacymap .inner-wrap{position: relative; max-width: 768px;}
+#pharmacymap main{margin-top: 28.142rem;}
+#pharmacymap header.basic{background: inherit; position: fixed; top: 0; width: 100%;}
+#pharmacymap h2{margin-bottom: 1.428rem;}
+#pharmacymap .search{padding: 0 2.857rem; position: fixed; top: 9.357rem; width: 100%; max-width: 768px; box-sizing: border-box;}
+#pharmacymap .quick-ul{display: flex; align-items: center; margin-bottom: 0.714rem;}
+#pharmacymap .quick-ul li{background: var(--white-color); border-radius:3.571rem; box-shadow: 0 0 0.357rem #0001; padding: 0.428rem 1.071rem; border: 1px solid var(--light-gray); cursor: pointer;}
+#pharmacymap .quick-ul li.on{border:1px solid var(--point-color);}
+#pharmacymap .quick-ul li.on button{color: var(--point-color);}
+#pharmacymap .quick-ul li.holiday.on{border:1px solid var(--blue-color) !important;}
+#pharmacymap .quick-ul li.holiday.on button{color: var(--blue-color) !important;}
+#pharmacymap .quick-ul li button{font-size: 0.928rem; color: var(--gray-color); display: block;}
+#pharmacymap .quick-ul li + li{margin-left: 1.071rem;}
+
+#pharmacymap .input-area{height: 3.571rem; line-height: 3.571rem; position: relative; background: var(--white-color); display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.714rem;}
+#pharmacymap .input-area input[type='text']{border: 0px; outline: unset !important; width: 90%; }
+#pharmacymap .input-area input[type='text']::placeholder{color: var(--light-gray); font-size: 1rem;}
+#pharmacymap .input-area button{width: 10%; text-align: right; font-size: 1.428rem; color: var(--dark-gray);}
+
+#pharmacymap .select-scroll{overflow-x: scroll; padding-bottom: 1.428rem;}
+#pharmacymap .select-ul{display: flex; width: max-content;}
+#pharmacymap .select-ul li{background: var(--point-color); padding: 8px 1.071rem; border-radius: 3.571rem;}
+#pharmacymap .select-ul li + li{margin-left: 0.357rem;}
+#pharmacymap .select-ul li span{margin-right: 0.714rem;}
+#pharmacymap .select-ul li span,
+#pharmacymap .select-ul li button{ color: var(--white-color); font-size: 1rem;}
+
+#pharmacymap form{position: relative; left: 0; top: 0;}
+#pharmacymap .modal-wrap{position: fixed; max-width: 768px; top: 23.571rem; left: 50%; transform: translateX(-50%); width: 100%; padding: 0 2.857rem; box-sizing: border-box; z-index: 101;}
+#pharmacymap .select-box{background: var(--white-color); border: 1px solid var(--dark-gray); border-radius: 1.142rem; width: 100%; height: 21.642rem; box-shadow: 0 0 0.714rem #0001; overflow-y: scroll;}
+#pharmacymap .select-box{display: none;}
+#pharmacymap .select-box li{padding: 1.071rem 1.428rem; box-sizing: border-box; display: flex; align-items: center;}
+#pharmacymap .select-box li label{display: block; width: 100%;}
+#pharmacymap .select-box li + li{border-top: 1px solid var(--dark-gray);}
+
+#pharmacymap .list{width: 100%; height:87vh; border-radius: 3.571rem 3.571rem 0 0; background: var(--white-color); overflow: hidden; position: relative; z-index: 100;}
+#pharmacymap .list .deco{padding: 1.428rem; box-sizing: border-box;}
+#pharmacymap .list .deco span{width: 2.857rem; height: 0.5rem; border-radius: 1.428rem; background: var(--light-gray); display: block; margin: 0 auto;}
+#pharmacymap .list-ul{height: calc(90vh - 47px); overflow-y: scroll;}
+#pharmacymap .list-ul .no-data p{color: var(--gray-color); text-align: center; padding: 14.285rem;}
+#pharmacymap .list-ul li{padding: 1.428rem; box-sizing: border-box;}
+#pharmacymap .list-ul li + li{border-top: 1px solid var(--dark-gray);}
+
+#pharmacymap .name{font-size: 1.428rem; font-weight: bold; margin-bottom: 0.714rem;}
+#pharmacymap .addr{font-size: 0.857rem; color: var(--dark-gray); margin-bottom: 1.071rem;}
+#pharmacymap .util{display: flex;}
+#pharmacymap .util span{padding: 0.471rem 1.428rem; border-radius: 50px; border: 1px solid var(--gray-color); color: var(--gray-color); font-size: 0.9rem; display: flex; align-items: center;}
+#pharmacymap .util span i{color: var(--gray-color);}
+#pharmacymap .util .bed{margin-right: 0.714rem; background: var(--gray-bg);}
+#pharmacymap .util .bed.on{color: var(--point-color); border-color: var(--point-color); background: #FFF4F4;}
+#pharmacymap .util span.holiBox{color: var(--blue-color); border-color: var(--blue-color); background: #fff; margin-left: 0.714rem;}
+
+
+/* 지도 디테일 영역 추가 */
+#pharmacyDetail{position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  background: var(--white-color);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 768px;
+  display: none;
+  height: 100%;
+}
+#pharmacyDetail .back-btn{position: fixed; left: 2.857rem; top: 3.857rem; border-radius: 50px; background: var(--white-color); color: var(--dark-gray); padding: 1.071rem 1.79rem; box-shadow: 0 0 0.714rem #0002; font-size: 1rem;}
+#pharmacyDetail .back-btn button{display: flex; align-items: center; font-weight: 500; font-size: 1rem;}
+#pharmacyDetail .back-btn i{font-size: 1.42rem; color: var(--gray-color);}
+#pharmacyDetail .map-wrap{width: 100%; height: 24.857rem; background: var(--dark-gray);}
+#pharmacyDetail .info-wrap{height: calc(100vh - 24.857rem); overflow-y: scroll;}
+#pharmacyDetail .info-wrap section{padding: 0 2.857rem 7rem; box-sizing: border-box;}
+#pharmacyDetail .info-wrap section .inner-sec{padding: 2.857rem 0;}
+#pharmacyDetail .info-wrap section + section .inner-sec{border-top: 1px solid var(--dark-gray);}
+#pharmacyDetail .name{font-size: 2.428rem; margin-bottom: 1.428rem;}
+#pharmacyDetail .addr{font-size: 1.214rem; color: var(--gray-color); margin-bottom: 1.428rem;}
+#pharmacyDetail .util{display: flex; margin-bottom: 2.857rem;}
+#pharmacyDetail .util span{padding: 0.471rem 1.428rem; border-radius: 50px; border: 1px solid var(--gray-color); color: var(--gray-color); font-size: 0.9rem; display: flex; align-items: center;}
+#pharmacyDetail .util span i{color: var(--gray-color);}
+#pharmacyDetail .util .bed{margin-right: 0.714rem; background: var(--gray-bg);}
+#pharmacyDetail .util .bed.on{color: var(--point-color); border-color: var(--point-color); background: #FFF4F4;}
+#pharmacyDetail .sec-tit{font-size: 1.428rem; font-weight: 600; margin-bottom: 0.714rem;}
+#pharmacyDetail .time-wrap{display: flex; justify-content: space-between; background: var(--gray-bg); padding: 1.428rem; box-sizing: border-box; border-radius: 0.714rem; margin-bottom: 0.714rem;}
+#pharmacyDetail .time-wrap ul{width: 50%;}
+#pharmacyDetail .time-wrap ul li + li{margin-top: 0.714rem;}
+#pharmacyDetail .time-info{font-size: 1rem;}
+#pharmacyDetail .basic-sec ul{display: flex; flex-wrap: wrap;}
+#pharmacyDetail .basic-sec ul li{width: 50%;margin-top: 0.714rem;}
+#pharmacyDetail .info-wrap section.bed-info{background: var(--gray-bg); padding-bottom: 4.285rem;}
+#pharmacyDetail .bed-info .inner-sec{background: var(--gray-bg); border-top: 0px !important;}
+#pharmacyDetail .bed-info li{display: flex; justify-content: space-between; padding: 1.071rem 0; border-bottom: 1px solid var(--light-gray);}
+#pharmacyDetail .bed-info .on .txt{color: var(--point-color);}
+#pharmacyDetail .call-btn{border-radius: 1.428rem 1.428rem 0 0; position: fixed; bottom: 0; box-shadow: 0 0 0.714rem #0002; z-index: 10;}
+#pharmacyDetail section li,#pharmacyDetail section span{font-size: 1.2rem;}
+
+/* 로딩 */
+#pharmacymap .list-ul li#loadingMessage,
+#emergencymap .list-ul li#loadingMessage{text-align: center;}
+
+#pharmacymap .list-ul li#loadingMessage i,
+#emergencymap .list-ul li#loadingMessage i{font-size: 5rem; text-align: center; padding: 5rem 0; color: var(--point-color);}

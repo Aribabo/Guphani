@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <!-- Editor's Style -->
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../../../css/admin/layout.css" />
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+    <script src="../../../js/admin/admin.js" defer></script>
+    <script src="../../../js/admin/firstAid/form.js" defer></script>
+    <title>응급처치 등록</title>
+  </head>
+  <body>
+    <div id="adminFirstAidForm" class="wrap detail">
+      <!-- 공통 메뉴 -->
+      <div>
+    <div id="menu">
+        <div class="user-wrap">
+            <div><span class="point-txt">최고관리자</span>님<br>안녕하세요</div>
+        </div>
+        <div class="menu-wrap">
+            <div class="tit">사이트 관리</div>
+            <ul>
+                <li><a href="../user/list.html"><i class="xi-user-o"></i>회원관리</a></li>
+                <li><a href="../inquiry/list.html"><i class="xi-comment-o"></i>문의관리</a></li>
+                <li><a href="../notice/list.html"><i class="xi-star-o"></i>공지사항 관리</a></li>
+                <li class="on"><a href="../firstAid/list.html"><i class="xi-help-o"></i>응급처치 관리</a></li>
+            </ul>
+        </div>
+        <p class="ver">버전정보 v1.0.0</p>
+    </div>
+</div>
+
+      <div class="common-right">
+        <!-- 공통헤더 -->
+        <header data-include-file="../header.html" class="includeJs"></header>
+        <div class="content-wrap">
+            <h2 class="tit">응급처치 등록</h2>
+            <div class="detail-wrap">
+                <section>
+                    <div class="table-wrap">
+                        <form action="">
+                            <table class="type2">
+                                <tr>
+                                    <th>제목</th>
+                                    <td><input type="text" name="" id="title" placeholder="제목을 입력해주세요"></td>
+                                </tr>
+                                <tr class="yutube-wrap">
+                                    <th>유튜브 링크</th>
+                                    <td><input type="text" name="" id="youtube" placeholder="유튜브 링크를 넣어주세요"></td>
+                                </tr>
+                                <tr>
+                                    <th>내용</th>
+                                    <td>
+                                        <div id="editorWrap">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="btn-wrap">
+                <button type="button" class="black-btn" onclick="window.location.href='./list.html'">뒤로가기</button>
+                <button type="button" class="point-btn" id="postBtn">응급처치 등록</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="layer-pop" id="firstAidPostLayer">
+        <div class="bg" onclick="layerOut('firstAidPostLayer')"></div>
+        <div class="inner-layer">
+            <p class="inner-text"></p>
+            <div class="btn-wrap two">
+                <button type="button" class="black-btn" id="closeBtn" onclick="layerOut('firstAidPostLayer')">닫기</button>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script>
+        const editor = new toastui.Editor({
+            el: document.querySelector('#editorWrap'), // 에디터를 적용할 요소 (컨테이너)
+            height: '500px',                        // 에디터 영역의 높이 값 (OOOpx || auto)
+            initialEditType: 'markdown',            // 최초로 보여줄 에디터 타입 (markdown || wysiwyg)
+            previewStyle: 'vertical'                // 마크다운 프리뷰 스타일 (tab || vertical)
+        });
+  </script>
+</html>

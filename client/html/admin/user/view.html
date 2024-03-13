@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../../../css/admin/layout.css" />
+    <script src="../../../js/admin/admin.js" defer></script>
+    <script src="../../../js/admin/user/delete.js" defer></script>
+    <script src="../../../js/admin/user/detail.js" defer></script>
+    <title>회원상세정보</title>
+  </head>
+  <body>
+    <div id="adminUserView" class="wrap detail">
+      <!-- 공통 메뉴 -->
+      <div>
+    <div id="menu">
+        <div class="user-wrap">
+            <div><span class="point-txt">최고관리자</span>님<br>안녕하세요</div>
+        </div>
+        <div class="menu-wrap">
+            <div class="tit">사이트 관리</div>
+            <ul>
+                <li class="on"><a href="../user/list.html"><i class="xi-user-o"></i>회원관리</a></li>
+                <li><a href="../inquiry/list.html"><i class="xi-comment-o"></i>문의관리</a></li>
+                <li><a href="../notice/list.html"><i class="xi-star-o"></i>공지사항 관리</a></li>
+                <li><a href="../firstAid/list.html"><i class="xi-help-o"></i>응급처치 관리</a></li>
+            </ul>
+        </div>
+        <p class="ver">버전정보 v1.0.0</p>
+    </div>
+</div>
+
+      <div class="common-right">
+        <!-- 공통헤더 -->
+        <header data-include-file="../header.html" class="includeJs"></header>
+        <div class="content-wrap">
+            <h2 class="tit">회원상세정보</h2>
+            <div class="detail-wrap">
+                <section>
+                    <h3 class="sec-tit">기본정보</h3>
+                    <div class="table-wrap">
+                        <form action="">
+                            <table class="type2">
+                                <tr>
+                                    <th>회원번호</th>
+                                    <td>1</td>
+                                    <th>이름</th>
+                                    <td><input type="text" name="" id="" value="홍길동"></td>
+                                </tr>
+                                <tr>
+                                    <th>성별</th>
+                                    <td>남자</td>
+                                    <th>생년월일</th>
+                                    <td><input type="date" name="" id="" value="1998-01-01"></td>
+                                </tr>
+                                <tr>
+                                    <th>아이디</th>
+                                    <td>apple</td>
+                                    <th>비밀번호</th>
+                                    <td>sadasfdgfgfdsadasfdgfgfd</td>
+                                </tr>
+                                <tr>
+                                    <th>핸드폰번호</th>
+                                    <td>010-1111-1111</td>
+                                    <th>관리자여부</th>
+                                    <td>
+                                        <div class="radio-wrap">
+                                            <input type="radio" name="admin" id="admin1" value="Y" class="type1">
+                                            <label for="admin1">Y</label>
+                                        </div>
+                                        <div class="radio-wrap">
+                                            <input type="radio" name="admin" id="admin2" value="N" class="type1">
+                                            <label for="admin2">N</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>회원상태</th>
+                                    <td colspan="3">
+                                        <div>
+                                            <select name="isUser" id="isUser">
+                                                <option value="N">탈퇴</option>
+                                                <option value="Y">정상</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="sec-tit">추가정보</h3>
+                    <div class="table-wrap">
+                        <form action="">
+                            <table class="type2">
+                                <tr>
+                                    <th>기저질환</th>
+                                    <td colspan="3">당뇨, 고혈압</td>
+                                </tr>
+                               <tr>
+                                    <th>알러지</th>
+                                    <td colspan="3">아스피린알러지</td>
+                               </tr>
+                               <tr>
+                                    <th>평소 복용약</th>
+                                    <td colspan="3">타이레놀, ㅇㅇㅇ</td>
+                               </tr>
+                               <tr>
+                                    <th>보호자 연락처</th>
+                                    <td>010-1234-1234</td>
+                                    <th>보호자관계</th>
+                                    <td>자녀</td>
+                               </tr>
+                            </table>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="btn-wrap">
+                <button type="button" class="black-btn" onclick="location.href='./list.html'">뒤로가기</button>
+                <button type="button" class="point-btn" id="modifyBtn">수정</button>
+                <button type="button" class="point-btn" id="delBtn">삭제</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="layer-pop" id="userDetailLayer">
+        <div class="bg" onclick="layerOut('userDetailLayer')"></div>
+        <div class="inner-layer">
+            <p class="inner-text"></p>
+            <div class="btn-wrap two">
+                <button type="button" class="black-btn" onclick="location.reload()">닫기</button>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

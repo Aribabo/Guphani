@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/user/findIdPw.css">
+    <script src="../../js/layout.js" defer></script>
+    <script src="../../js/user/findIdPw.js" defer></script>
+    <title>비밀번호 찾기</title>
+  </head>
+  <body>
+    <div id="findPw">
+        <header class="basic">
+            <div class="inner-header">
+                <a href="../index.html"><i class="xi-angle-left"></i> <span><strong>메인</strong>으로 돌아가기</span></a>
+            </div>
+        </header>
+        <div class="inner-wrap">
+            <main>
+                <h2>아이디 찾기</h2>
+                <form action="" onsubmit="return fn_login()">
+                    <div class="input-wrap">
+                        <div class="input-area">
+                            <input type="text" name="" id="username" class="txt-box" placeholder="이름을 입력해주세요.">
+                        </div>
+                        <div class="input-area">
+                            <input type="text" name="" id="findid-userhp" class="txt-box" placeholder="전화번호를 입력해주세요.">
+                        </div>
+                        <div class="error"></div>
+                        <button type="button" class="black-btn need-margin" id="findIdBtn">아이디 찾기</button>
+                    </div>
+                </form>
+                <hr class="hr">
+                <h2 class="hr">비밀번호 변경</h2>
+                <form action="" onsubmit="return fn_login()">
+                    <div class="input-wrap">
+                        <div class="input-area">
+                            <input type="text" name="" id="userid" class="txt-box findpw-onestep" placeholder="아이디를 입력해주세요.">
+                        </div>
+                        <div class="input-area">
+                            <input type="text" name="findpw-onetwostep" id="findpw-onetwostep" class="txt-box findpw-onetwostep" placeholder="전화번호를 입력해주세요.">
+                        </div>
+                        <button type="button" class="black-btn marginsetting-btn findpw-onestep" id="findpw-onestepBtn">인증받기</button>
+                        <div class="input-area">
+                            <input type="text" name="" id="findpw-twostep" class="txt-box findpw-twostep" placeholder="인증번호를 입력해주세요.">
+                        </div>
+                        <button type="button" class="black-btn marginsetting-btn findpw-twostep" id="findpw-twostepBtn">인증확인</button>
+                        <div class="error"></div>
+                        <div class="input-area">
+                            <input type="password" name="" id="newPw" class="txt-box findpw-onestep findpw-threestep" placeholder="새로운 비밀번호를 입력해주세요.">
+                            <p class="info_text findpw-threestep" id="pw_info">영문 대문자와 소문자, 숫자, 특수문자 중 2가지 이상을 조합하여 6-20자로 입력해주세요.</p>
+                        </div>
+                        <div class="input-area">
+                            <input type="password" name="findpw-onetwostep" id="newPwCheck" class="txt-box findpw-threestep" placeholder="새로운 비밀번호를 한번 더 입력해주세요.">
+                            <p class="info_text hidden" id="pwCheck_info">일치하지 않습니다</p>
+                        </div>
+                    </div>
+                    <button type="button" class="black-btn findpw-threestep resetPwBtn" id="resetPwBtn">비밀번호 재설정</button>
+                </form>
+            </main>
+        </div>
+        <div class="layer-pop" id="register2Layer">
+            <div class="bg" onclick="layerOut('register2Layer')"></div>
+            <div class="inner-layer">
+                <p id="message"></p>
+                <div class="btn-wrap two">
+                    <button type="button" class="black-btn" onclick="layerOut('register2Layer')">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

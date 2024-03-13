@@ -1,0 +1,50 @@
+@import url('../reset.css'); /*리셋 css*/
+@import url('../common.css'); /*공통 css*/
+
+/* 타이틀 */
+#register3 .page-tit{font-size: 2rem; line-height: 2.428rem; color: var(--point-color); margin-top: 1.42rem;}
+
+/* 전체 간격 */
+#register3 .inner-wrap{padding: 0 2.857rem; box-sizing: border-box;margin-bottom: 1.42rem;}
+#register3 .input-area {margin-bottom: 2.426rem;}
+
+/* 안내문구 */
+#register3 .centerBox{display: flex; flex-direction: column; align-items: center;}
+#register3 .noticeBox{background-color: var(--gray-bg); padding: 2.607rem 1.714rem; width: 100%; text-align: center; margin: 0 auto; border-radius: 15px; margin-bottom: 2.426rem;}
+#register3 .red-notice{color: var(--point-color); margin-top:0.357rem ;}
+
+/* 항목 + 선택 */
+#register3 .left { font-size: 1.071rem; padding-left: 0.357rem; margin-bottom: 0.71rem; font-weight: bold; }
+#register3 .gray_font {  font-size: 1.071rem; margin-bottom: 0.71rem; color: var(--dark-gray-text); font-weight: normal;}
+
+/* 입력 + 버튼 */
+#register3 .btn_box{display: flex; }
+#register3 input{border-radius: 0.714rem; font-size: 1.071rem; height: 3.571rem; line-height: 3.571rem;}
+#register3 .check_btn{display: inline-block; background: var(--light-gray); width: 7.214rem; height:3.571rem ; flex-basis: 8.517rem; border-radius: 0.714rem; color: var(--dark-gray); line-height: 3.571rem;  box-sizing: border-box; font-size: 1.071rem; font-weight: bold; text-align: center;margin-left: 0.714rem; }
+#register3 .txt_box_with_btn{width: calc(100% - 7.214rem);}
+
+/* 가입완료버튼 */
+#register3 .point-btn1 {display: inline-block;background: var(--point-color); width: 100%; border-radius: 3.571rem; color: var(--white-color); line-height: 5rem; height: 5rem; box-sizing: border-box; font-size: 1.428rem; font-weight: bold; text-align: center;
+}
+
+/* 입력받은 값들 */
+#register3 li {background: var(--point-color); padding: 8px 1.071rem; border-radius: 3.571rem; margin-top: 0.714rem; margin-left: 0.357rem; color: var(--white-color); font-size: 0.928rem; 
+}
+#register3 .flexwrap{ flex-wrap: wrap;}
+
+#register3 .allergyList > li {
+    background: var(--blue-color);
+  }
+
+#register3 .del-btn{margin-left: 0.714rem; color: var(--white-color); font-size: 1rem;}
+#register3 li span{color: var(--white-color); font-size: 1rem;}
+
+/* 공통 라디오 박스 - 혈액형 */
+#register3 .blood-radio label{margin-right: 0.714rem;}
+#register3 input[type='radio']{appearance: none !important; width: 2.142rem; height: 2.142rem;  border: 0.071px solid var(--light-gray); border-radius: 50%; position: relative; margin-right: 0.714rem;}
+#register3 input[type='radio']::after{content: ''; background: var(--light-gray); width: 60%; height: 60%; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 50%;}
+#register3 input[type='radio'] + label,
+#register3 input[type='radio'] + label span{color: var(--light-gray); font-size: 1rem; font-weight: 500; }
+#register3 input[type='radio']:checked{border-color: var(--point-color);}
+#register3 input[type='radio']:checked::after{ background: var(--point-color);}
+#register3 input[type='radio']{ line-height: 2.142rem; vertical-align: middle; }

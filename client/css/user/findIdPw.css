@@ -1,0 +1,24 @@
+@import url('../reset.css'); /*리셋 css*/
+@import url('../common.css'); /*공통 css*/
+
+#findPw .txt-box{height: 4.285rem; line-height: 4.285rem;}
+#findPw .inner-wrap{padding: 0 2.857rem; box-sizing: border-box;}
+#findPw .logo{width: 33%; padding: 7.142rem ;margin: 0 auto;}
+/* 글자 */
+#findPw h2 {text-align: center; font-size: 1.571rem; font-weight: bold; margin-bottom: 3.571rem ; margin-top: 1.42rem} 
+#findPw .marginsetting-btn{ margin-top: 0.714rem;}
+#findPw .need-margin{margin-top: 0.714rem;}
+
+/* 비밀번호 인증쪽 */
+#findPw .findpw-twostep {display: none;}
+#findPw .findpw-threestep {display: none;}
+#findPw .findpw-onetwostep:disabled{ background: var(--light-gray) !important; margin-bottom: 0.714rem;}
+#findPw .info_text{color : var(--point-color); padding-left: 0.714rem; margin-top: 0.357rem; font-size: 0.857rem;}
+#findPw .hidden { display: none;}
+#findPw .resetPwBtn { margin-top: 0.714rem;}
+
+/* 가운데선 */
+#findPw .hr { margin-top: 3.571rem;}
+#findPw hr{margin-bottom: 0;}
+/* 버튼컬러변경  */
+#findPw .black-btn { background-color: var(--point-color);}

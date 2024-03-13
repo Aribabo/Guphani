@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../../css/user/register3.css" />
+    <script src="../../js/layout.js" defer></script>
+    <script src="../../js/user/user_register3.js" defer></script>
+</head>
+<body>
+    <div id="register3">
+        <header class="basic">
+            <div class="inner-header">
+                <a href="../index.html"><i class="xi-angle-left"></i> <span><strong>메인</strong>으로 돌아가기</span></a>
+            </div>
+        </header>  
+        <div class="inner-wrap">
+            <div class="main_box">
+                <h2 class="page-tit">
+                    추가정보
+                </h2>
+                <div class="centerBox">
+                    <div id="noticeBox" class="noticeBox inner-wrap">
+                    <p class="black-notice">추가정보에 입력한 정보 중 일부가 119 문자 발송시 같이 전송됩니다.</p>
+                    <p class="red-notice">* 해당 정보는 선택사항으로 입력하지 않아도 회원가입이 가능합니다.</p>
+                    </div>
+                </div>
+                <div class="input-area">
+                    <p class="left">혈액형 <span class="gray_font">(선택)</span></p>
+                    <div class="blood-radio">
+                        <label><input type="radio" name="bloodType" value="A" class="genderText">A형</label>
+                        <label><input type="radio" name="bloodType" value="B" class="genderText">B형</label>
+                        <label><input type="radio" name="bloodType" value="O" class="genderText">O형</label>
+                        <label><input type="radio" name="bloodType" value="AB" class="genderText">AB형</label>
+                    </div>
+                </div>
+                <div  class="input-area sickBox">
+                    <p class="left">기저질환 <span class="gray_font">(선택)</span></p>
+                    <div class="btn_box">
+                        <input type="text" name="" id="sick" class="txt-box txt_box_with_btn inputSick" placeholder="기저질환 입력" >
+                        <button class="check_btn btnSick" type="button" id="insertSick" >추가</button>
+                    </div>
+                    <div class="btn_box sickList flexwrap">
+                    </div>
+                    
+                </div>
+                <div class="input-area allergyBox">
+                    <p class="left">알러지 <span class="gray_font">(선택)</span></p>
+                    <div class="btn_box">
+                        <input type="text" name="" id="allergy" class="txt-box txt_box_with_btn inputAllergy" placeholder="알러지 입력" >
+                     <button class="check_btn btnAllergy" type="button" id="insertAllergy" >추가</button>
+                    </div>
+                    <div class="btn_box allergyList flexwrap">
+                    </div>
+                </div>
+                <div class="input-area medicineBox">
+                    <p class="left">평소 복용약 <span class="gray_font">(선택)</span></p>
+                    <div class="btn_box">
+                        <input type="text" name="" id="medicine" class="txt-box txt_box_with_btn inputMedicine" placeholder="복용약 입력" >
+                        <button class="check_btn btnMedicine" type="button" id="insertMedicine" >추가</button>
+                    </div>
+                    <div class="btn_box medicineList flexwrap">
+                    </div>
+                </div>
+                <div class="input-area">
+                    <p class="left">보호자 번호 <span class="gray_font">(선택)</span></p>
+                    <input type="text" name="" id="guard_hp" class="txt-box" placeholder="보호자 번호 입력">
+                </div>
+                <div class="input-area">
+                    <p class="left">보호자 관계 <span class="gray_font">(선택)</span></p>
+                    <input type="text" name="" id="guard_rel" class="txt-box" placeholder="보호자 관계 입력">
+                </div>
+                <button type="button" class="point-btn1" id="addInfoForm">추가정보입력</button>
+            </div>
+        </div>
+        <div class="layer-pop" id="register3Layer">
+            <div class="bg" onclick="layerOut('register3Layer')"></div>
+            <div class="inner-layer">
+                <p id="message"></p>
+                <div class="btn-wrap two">
+                    <button type="button" class="black-btn" onclick="layerOut('register3Layer')">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

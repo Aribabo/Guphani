@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../../../css/admin/layout.css" />
+    <script src="../../../js/admin/admin.js" defer></script>
+    <script src="../../../js/admin/firstAid/list.js" defer></script>
+    <title>응급처치 관리</title>
+  </head>
+  <body>
+    <div id="filstAidList" class="wrap">
+      <!-- 공통 메뉴 -->
+      <div>
+    <div id="menu">
+        <div class="user-wrap">
+            <div><span class="point-txt">최고관리자</span>님<br>안녕하세요</div>
+        </div>
+        <div class="menu-wrap">
+            <div class="tit">사이트 관리</div>
+            <ul>
+              <li><a href="../user/list.html"><i class="xi-user-o"></i>회원관리</a></li>
+              <li><a href="../inquiry/list.html"><i class="xi-comment-o"></i>문의관리</a></li>
+              <li><a href="../notice/list.html"><i class="xi-star-o"></i>공지사항 관리</a></li>
+              <li class="on"><a href="#"><i class="xi-help-o"></i>응급처치 관리</a></li>
+            </ul>
+        </div>
+        <p class="ver">버전정보 v1.0.0</p>
+    </div>
+</div>
+
+      <div class="common-right">
+        <!-- 공통헤더 -->
+        <header data-include-file="../header.html" class="includeJs"></header>
+        <div class="content-wrap">
+          <h2 class="tit">응급처치 관리</h2>
+          <div class="search-wrap">
+            <table>
+              <tr>
+                <th>제목</th>
+                <td><input type="text" name="" id="titleSearch" placeholder="제목을 입력하세요" class="txt-box"></td>
+                <th>내용</th>
+                <td><input type="text" name="" id="contentSearch" placeholder="내용을 입력하세요" class="txt-box"></td>
+                <td class="button-td"><button type="button" id="schBtn" class="point-btn">검색</button></td>
+              </tr>
+              <tr>
+                <th>등록일자</th>
+                <td colspan="3">
+                  <div class="date-wrap">
+                    <input type="date" name="" id="startDate" class="txt-box">
+                    <span class="date-deco">~</span>
+                    <input type="date" name="" id="endDate" class="txt-box">
+                  </div>
+                </td>
+                <td class="button-td"><button type="button" class="black-btn" id="resetBtn">초기화</button></td>
+              </tr>
+            </table>
+          </div>
+          <div class="list-table-wrap">
+            <div class="top">
+              <span class="total">20건</span>
+              <div class="btn-wrap">
+                <a href="./form.html" class="point-b-btn">등록</a>
+                <button type="button" class="black-btn" id="selectDel">선택삭제</button>
+              </div>
+            </div>
+
+            <div class="bottom">
+              <table>
+                <colgroup>
+                  <col style="width: 5%;">
+                  <col style="width: 5%;">
+                  <col style="width: 30%;">
+                  <col style="width: 30%;">
+                  <col style="width: 10%;">
+                  <col style="width: 10%;">
+                </colgroup>
+                <thead>
+                  <th><input type="checkbox" name="" id="allAgree" class="type1"></th>
+                  <th>No</th>
+                  <th>제목</th>
+                  <th>내용</th>
+                  <th>등록일자</th>
+                  <th>상세보기</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" name="" id="" class="type1"></td>
+                    <td>1</td>
+                    <td><p class="ellip1">응급처치방법</p></td>
+                    <td><p class="ellip1">응급처치방법 알려드립니다.</p></td>
+                    <td>2023-12-01</td>
+                    <td><a href="./view.html" class="gray-btn view-btn">상세보기</a></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="" id="" class="type1"></td>
+                    <td>2</td>
+                    <td><p class="ellip1">응급처치방법</p></td>
+                    <td><p class="ellip1">응급처치방법 알려드립니다.</p></td>
+                    <td>2023-12-01</td>
+                    <td><a href="./view.html" class="gray-btn view-btn">상세보기</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="page">
+            <ul id="pageUl">
+            </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="layer-pop" id="firstAidViewDetailLayer">
+      <div class="bg" onclick="layerOut('firstAidViewDetailLayer')"></div>
+      <div class="inner-layer">
+          <p class="inner-text"></p>
+          <div class="btn-wrap two">
+              <button type="button" class="black-btn" onclick="layerOut('noticeViewDetailLayer')">닫기</button>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <!-- Editor's Style -->
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../../../css/admin/manage.css" />
+    <link rel="stylesheet" href="../../../css/admin/layout.css" />
+    <script src="https://uicdn.toast.com/editor/3.0.2/toastui-editor-all.min.js"></script>
+    <script src="../../../js/admin/admin.js" defer></script>
+    <script src="../../../js/admin/firstAid/view.js" defer></script>
+    <title>응급처치 뷰페이지</title>
+  </head>
+  <body>
+    <div id="adminFirstAidView" class="wrap detail">
+      <!-- 공통 메뉴 -->
+      <div>
+    <div id="menu">
+        <div class="user-wrap">
+            <div><span class="point-txt">최고관리자</span>님<br>안녕하세요</div>
+        </div>
+        <div class="menu-wrap">
+            <div class="tit">사이트 관리</div>
+            <ul>
+                <li><a href="../user/list.html"><i class="xi-user-o"></i>회원관리</a></li>
+                <li><a href="../inquiry/list.html"><i class="xi-comment-o"></i>문의관리</a></li>
+                <li><a href="../notice/list.html"><i class="xi-star-o"></i>공지사항 관리</a></li>
+                <li class="on"><a href="../firstAid/list.html"><i class="xi-help-o"></i>응급처치 관리</a></li>
+            </ul>
+        </div>
+        <p class="ver">버전정보 v1.0.0</p>
+    </div>
+</div>
+
+      <div class="common-right">
+        <!-- 공통헤더 -->
+        <header data-include-file="../header.html" class="includeJs"></header>
+        <div class="content-wrap">
+            <h2 class="tit">응급처치 상세</h2>
+            <div class="detail-wrap">
+                <section>
+                    <div class="table-wrap">
+                        <form action="">
+                            <table class="type2">
+                                <tr>
+                                    <th>제목</th>
+                                    <td id="title">홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th>작성일자</th>
+                                    <td id="date">홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th>유튜브 링크</th>
+                                    <td><a href="" id="youtube" target="_blank"></a></td>
+                                </tr>
+                                <tr>
+                                    <th>내용</th>
+                                    <td>
+                                        <div id="editorWrap">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="btn-wrap">
+                <button type="button" class="black-btn" onclick="window.location.href='./list.html'">목록가기</button>
+                <button type="button" class="point-btn" id="delBtn">삭제</button>
+                <button type="button"><a href="./modify.html" class="point-btn" id="modifyBtn">수정</a></button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="layer-pop" id="firstAidViewDetailLayer">
+        <div class="bg" onclick="layerOut('firstAidViewDetailLayer')"></div>
+        <div class="inner-layer">
+            <p class="inner-text"></p>
+            <div class="btn-wrap two">
+                <button type="button" class="black-btn" onclick="layerOut('noticeViewDetailLayer')">닫기</button>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

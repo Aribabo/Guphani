@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../../../css/admin/common.css" />
+    <script src="../../../js/admin/admin.js" defer></script>
+    <script src="../../../js/admin/inquiry/list.js" defer></script>
+    <title>문의관리페이지</title>
+</head>
+<body>
+    <div id="adminInquiryList" class="wrap">
+        <div>
+    <div id="menu">
+        <div class="user-wrap">
+            <div><span class="point-txt">최고관리자</span>님<br>안녕하세요</div>
+        </div>
+        <div class="menu-wrap">
+            <div class="tit">사이트 관리</div>
+            <ul>
+                <li><a href="../user/list.html"><i class="xi-user-o"></i>회원관리</a></li>
+                <li class="on"><a href="#"><i class="xi-comment-o"></i>문의관리</a></li>
+                <li><a href="../notice/list.html"><i class="xi-star-o"></i>공지사항 관리</a></li>
+                <li><a href="../firstAid/list.html"><i class="xi-help-o"></i>응급처치 관리</a></li>
+            </ul>
+        </div>
+        <p class="ver">버전정보 v1.0.0</p>
+    </div>
+</div>
+
+        <div class="common-right">
+            <header data-include-file="../header.html" class="includeJs"></header>
+            <div class="content-wrap">
+                <h2 class="tit">문의관리</h2>
+                <div class="search-wrap">
+                    <table>
+                        <tr>
+                            <th>작성자</th>
+                            <td><input type="text" name="name" id="name" placeholder="작성자의 이름을 입력하세요" class="txt-box"></td>
+                            <th>답변여부</th>
+                            <td colspan="3">
+                                <div class="radio-wrap">
+                                    <input type="radio" name="answerStatus" id="statusY" value="Y" class="type1">
+                                    <label for="statusY">완료</label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" name="answerStatus" id="statusN" value="N" class="type1">
+                                    <label for="statusY">대기</label>
+                                </div>
+                            </td>
+                            <td class="button-td"><button type="button" class="point-btn" id="schBtn">검색</button></td>
+                        </tr>
+                        <tr>
+                            <th>내용</th>
+                            <td><input type="text" name="contents" id="contents" placeholder="내용을 입력하세요" class="txt-box"></td>
+                            <th colspan="3">분류</th>
+                            <td>
+                                <div>
+                                    <select name="sort" id="sort" class="txt-box">
+                                        <option value="회원정보 문의">회원정보 문의</option>
+                                        <option value="오류 문의">오류 문의</option>
+                                        <option value="기타 문의">기타 문의</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td class="button-td"><button type="button" class="black-btn" id="resetBtn">초기화</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="list-table-wrap">
+                    <div class="top">
+                        <span class="total">총 20개</span>
+                        <div class="btn-wrap">
+                            <button type="button" class="black-btn" id="selectDel">선택삭제</button>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <table>
+                            <colgroup>
+                                <col style="width: 3%;">
+                                <col style="width: 3%;">
+                                <col style="width: 5%;">
+                                <col style="width: 8%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 3%;">
+                                <col style="width: 5%;">
+                                <col style="width: 5%;">
+                            </colgroup>
+                            <thead>
+                                <th><input type="checkbox" name="" id="allAgree" class="type1"></th>
+                                <th>No</th>
+                                <th>작성자</th>
+                                <th>문의구분</th>
+                                <th>문의제목</th>
+                                <th>문의내용</th>
+                                <th>문의일자</th>
+                                <th>답변여부</th>
+                                <th>답변일자</th>
+                                <th>상세보기</th>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="page">
+                    <ul id="pageUl">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="layer-pop" id="inquiryListLayer">
+            <div class="bg" onclick="layerOut('inquiryListLayer')"></div>
+            <div class="inner-layer">
+                <p class="inner-text"></p>
+                <div class="btn-wrap two">
+                    <button type="button" class="black-btn" onclick="layerOut('noticeViewDetailLayer')">닫기</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

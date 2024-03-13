@@ -1,0 +1,63 @@
+@import url('./reset.css'); /*리셋 css*/
+@import url('./common.css'); /*공통 css*/
+
+/*헤더 부분*/
+#mypage{height: 100%; background: var(--gray-bg); position: fixed; left: 0; top: 0; width: 100%; z-index: 200; display: none; overflow-y: scroll;}
+#mypage .header-box {background-color: #ff5e5e; color: #FFFFFF; padding-bottom: 2.857rem;}
+#mypage .inner-bar {display: flex; justify-content: space-between; padding-top: 2.14rem; padding-left: 2.286rem; padding-bottom: 1.429rem; padding-right: 2.238rem;}
+#mypage .xi-close {font-size: 1.334rem; color: #FFFFFF; font-weight:bolder;}
+#mypage .mypage-info {color: #FFFFFF; width: 100%; height: auto; padding-left: 2.286rem; padding-top: 2.857rem; box-sizing: border-box;}
+#mypage .mypagename {color:  #FFFFFF; font-size: 2rem; font-family: 'yg-jalnan', 'Pretendard' !important;}
+#mypage .info-list > li {color:  #FFFFFF; font-size: 1.571rem; }
+#mypage .info-list {display: flex; height: 1.929rem; padding-top: 0.714rem;}
+#mypage .info-firstlist {border-right: 1px solid  #FFFFFF; padding-right: 0.8rem; }
+#mypage .info-secondlist {padding-left: 0.8rem;}
+#mypage .info-firstlist span {font-size: 1.334rem; color: var(--white-color);}
+#mypage .info-secondlist span { font-size: 1.334rem; color: var(--white-color);}
+
+/*문의하기*/
+#inquiryList .point-btn{border-radius: 0.714rem 0.714rem 0 0 ; position: fixed; bottom: 0;}
+
+/*회원탈퇴*/
+.mypage-logout-tit{font-size: 1.571rem; font-family: 'yg-jalnan', 'Pretendard' !important; text-align: center; padding: 0 2.3rem; margin-bottom: 1.428rem;}
+.finsh-unlog {color:#ff5e5e;}
+#unlog { display: none;}
+.mypage-strong {font-size: 1.214rem;}
+
+
+/*서비스, 개인정보처리방침*/
+#personal .inner-wrap, #service .inner-wrap{padding: 0 2.857rem 2.857rem; box-sizing: border-box;}
+.service-con { background-color: #f8f8f8; color: #919191; font-size: 1rem; border-radius: 2rem; padding:2.5rem; box-sizing: border-box;}
+.service-text {height:calc(100vh - 22.142rem); overflow-y:scroll; }
+
+/*main리스트*/
+.mypage-list{background: var(--white-color);}
+.mypage-list > li {border-bottom: 1px solid #dedede;}
+.mypage-list > li a {color: #919191; font-size: 1.143rem; padding: 2.179rem; box-sizing: border-box; display: block;}
+
+/*footer*/
+.mypagefooter {background-color: #f8f8f8; padding: 3.286rem;}
+footer > p {color: #919191; width: 100%; text-align: right; font-size: 1rem;}
+
+/*문의 상세페이지*/
+#inquiryForm .smalltitle {font-size: 1.071rem; padding: 0.964rem; font-weight: 500;}
+#inquiryForm textarea{width: 100%; resize: none; border: none; box-sizing: border-box; min-height:30.786rem; padding:2.5rem; background-color: var(--gray-bg); color: var(--gray-color); font-size: 1rem; border-radius: 1.428rem; white-space: normal; outline: none !important;}
+#inquiryForm .inquiry-type{font-size: 1rem;}
+#inquiryForm .txt-box{height: 3.571rem; line-height: 3.571rem;}
+#inquiryForm .inner-wrap{padding: 0 2.857rem 2.857rem; box-sizing: border-box;}
+#inquiryForm .btn-wrap{margin-top: 1.428rem;}
+
+/* 문의 셀렉트박스 */
+#inquiryForm .select-wrap{position: relative; }
+#inquiryForm .selectbox{display: flex; justify-content: space-between; align-items: center;}
+#inquiryForm .selectbox button{font-size: 18px; color: var(--gray-color);}
+
+#inquiryForm .modal-wrap{display: none; position: absolute; width: 100%; top:7.428rem; left: 50%; transform: translateX(-50%); z-index: 101;}
+#inquiryForm .select-box{background: var(--white-color); border: 1px solid var(--dark-gray); border-radius: 1.142rem; width: 100%; height: auto; box-shadow: 0 0 0.714rem #0001; overflow-y: scroll;}
+#inquiryForm .select-box li{padding: 1.071rem 1.428rem; box-sizing: border-box; display: flex; align-items: center;}
+#inquiryForm .select-box li span{font-size: 1rem;}
+#inquiryForm .select-box li + li{border-top: 1px solid var(--dark-gray);}
+
+
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../../../css/admin/common.css" />
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+    <script src="../../../js/admin/admin.js" defer></script>
+    <script src="../../../js/admin/inquiry/view.js" defer></script>
+    <title>문의상세페이지</title>
+</head>
+<body>
+    <div id="adminInquiryView" class="wrap detail">
+        <div>
+    <div id="menu">
+        <div class="user-wrap">
+            <div><span class="point-txt">최고관리자</span>님<br>안녕하세요</div>
+        </div>
+        <div class="menu-wrap">
+            <div class="tit">사이트 관리</div>
+            <ul>
+                <li><a href="../user/list.html"><i class="xi-user-o"></i>회원관리</a></li>
+                <li class="on"><a href="../inquiry/list.html"><i class="xi-comment-o"></i>문의관리</a></li>
+                <li><a href="../notice/list.html"><i class="xi-star-o"></i>공지사항 관리</a></li>
+                <li><a href="../firstAid/list.html"><i class="xi-help-o"></i>응급처치 관리</a></li>
+            </ul>
+        </div>
+        <p class="ver">버전정보 v1.0.0</p>
+    </div>
+</div>
+
+        <div class="common-right">
+            <header data-include-file="../header.html" class="includeJs"></header>
+            <div class="content-wrap">
+                <h2 class="tit">문의상세정보</h2>
+                <div class="detail-wrap">
+                    <section>
+                        <h3 class="sec-tit">문의</h3>
+                        <div class="table-wrap">
+                            <form action="">
+                                <table class="type2">
+                                    <tr>
+                                        <th>문의번호</th>
+                                        <td id="inquiryId">1</td>
+                                        <th>회원번호</th>
+                                        <td id="userId">1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>작성자</th>
+                                        <td id="name">홍길동</td>
+                                        <th>작성일자</th>
+                                        <td id="createdAt"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>제목</th>
+                                        <td colspan="3" id="title">안녕하세요 문의드립니다</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <th>내용</th>
+                                        <td id="contents" colspan="3"></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="sec-tit">답변</h3>
+                        <div class="table-wrap">
+                            <form action="">
+                                <table class="type2">
+                                    <tr>
+                                        <th>답변내용</th>
+                                        <td>
+                                            <div id="editorWrap">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+                <div class="btn-wrap">
+                    <button type="button" class="black-btn" onclick="location.href='./list.html'">뒤로가기</button>
+                    <button type="button" class="point-btn" id="ansBtn">답변등록</button>
+                    <button type="button" class="point-btn" id="delBtn">삭제</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer-pop" id="inquiryDetailLayer">
+        <div class="bg" onclick="layerOut('inquiryDetailLayer')"></div>
+        <div class="inner-layer">
+            <p class="inner-text"></p>
+            <div class="btn-wrap two">
+                <button type="button" class="black-btn" onclick="layerOut('inquiryDetailLayer')">닫기</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+#privateAmbulances .tit-wrap{position: fixed; left: calc(50% + 2.857rem); top: 5.714rem; width: 100%; max-width: 768px; margin: 0 auto; transform: translateX(-50%);}
+#privateAmbulances .inner-wrap{background: var(--gray-bg);}
+#privateAmbulances main{padding-top: 13.142rem;}
+#privateAmbulances header.basic{background: inherit; position: fixed; top: 0; width: 100%;}
+#privateAmbulances h2{margin-bottom: 1.428rem;}
+#privateAmbulances .search{padding: 0 2.857rem; position: fixed; top: 6.357rem; width: 100%; max-width: 768px; box-sizing: border-box; background: var(--gray-bg);}
+#privateAmbulances .quick-ul{display: flex; align-items: center; margin-bottom: 0.714rem;}
+#privateAmbulances .quick-ul li{background: var(--white-color); border-radius:3.571rem; box-shadow: 0 0 0.357rem #0001; padding: 0.428rem 1.071rem; border: 1px solid var(--light-gray); cursor: pointer;}
+#privateAmbulances .quick-ul li.on{border:1px solid var(--point-color);}
+#privateAmbulances .quick-ul li.on button{color: var(--point-color);}
+#privateAmbulances .quick-ul li button{font-size: 0.928rem; color: var(--gray-color); display: block;}
+#privateAmbulances .quick-ul li + li{margin-left: 1.071rem;}
+
+#privateAmbulances .input-area{height: 3.571rem; line-height: 3.571rem; position: relative; background: var(--white-color); display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.714rem;}
+#privateAmbulances .input-area input[type='text']{border: 0px; outline: unset !important; width: 90%; }
+#privateAmbulances .input-area input[type='text']::placeholder{color: var(--light-gray); font-size: 1rem;}
+#privateAmbulances .input-area button{width: 10%; text-align: right; font-size: 1.428rem; color: var(--dark-gray);}
+
+#privateAmbulances .select-scroll{overflow-x: scroll; padding-bottom: 1.428rem;}
+#privateAmbulances .select-ul{display: flex; width: max-content;}
+#privateAmbulances .select-ul li{background: var(--point-color); padding: 8px 1.071rem; border-radius: 3.571rem;}
+#privateAmbulances .select-ul li + li{margin-left: 0.357rem;}
+#privateAmbulances .select-ul li span{margin-right: 0.714rem;}
+#privateAmbulances .select-ul li span,
+#privateAmbulances .select-ul li button{ color: var(--white-color); font-size: 1rem;}
+
+#privateAmbulances form{position: relative; left: 0; top: 0;}
+#privateAmbulances .modal-wrap{position: fixed; max-width: 768px; top: 23.571rem; left: 50%; transform: translateX(-50%); width: 100%; padding: 0 2.857rem; box-sizing: border-box; z-index: 101;}
+#privateAmbulances .select-box{background: var(--white-color); border: 1px solid var(--dark-gray); border-radius: 1.142rem; width: 100%; height: 21.642rem; box-shadow: 0 0 0.714rem #0001; overflow-y: scroll;}
+#privateAmbulances .select-box{display: none;}
+#privateAmbulances .select-box li{padding: 1.071rem 1.428rem; box-sizing: border-box; display: flex; align-items: center;}
+#privateAmbulances .select-box li label{display: block; width: 100%;}
+#privateAmbulances .select-box li + li{border-top: 1px solid var(--dark-gray);}
+
+#privateAmbulances .list{width: 100%; height: 90vh; border-radius: 3.571rem 3.571rem 0 0; background: var(--white-color); overflow: hidden; position: relative; z-index: 100;}
+#privateAmbulances .list .deco{padding: 1.428rem; box-sizing: border-box;}
+#privateAmbulances .list .deco span{width: 2.857rem; height: 0.5rem; border-radius: 1.428rem; background: var(--light-gray); display: block; margin: 0 auto;}
+#privateAmbulances .list-ul{height: calc(90vh - 47px); overflow-y: scroll;}
+#privateAmbulances .list-ul .no-data p{color: var(--gray-color); text-align: center; padding: 14.285rem;}
+#privateAmbulances .list-ul li{padding: 1.428rem; box-sizing: border-box;}
+#privateAmbulances .list-ul li + li{border-top: 1px solid var(--dark-gray);}
+
+#privateAmbulances .name{font-size: 1.428rem; font-weight: bold; margin-bottom: 0.714rem;}
+#privateAmbulances .addr{font-size: 0.857rem; color: var(--dark-gray); margin-bottom: 1.071rem;}
+#privateAmbulances .util{display: flex;}
+#privateAmbulances .util span, #privateAmbulances .util button{padding: 0.471rem 1.428rem; border-radius: 50px; border: 1px solid var(--gray-color); color: var(--gray-color); font-size: 0.9rem; display: flex; align-items: center;}
+#privateAmbulances .util span + span, #privateAmbulances .util button + span{margin-left: 0.357rem;}
+#privateAmbulances .util span:first-child, #privateAmbulances .util button{border-color: var(--point-color); color: var(--point-color);}
+#privateAmbulances .util span i, #privateAmbulances .util button{color: var(--gray-color); margin-right: 0.357rem;}
+
+/* 로딩 */
+#privateAmbulances .list-ul li#loadingMessage{text-align: center;}
+#privateAmbulances .list-ul li#loadingMessage i{font-size: 5rem; text-align: center; padding: 5rem 0; color: var(--point-color);}

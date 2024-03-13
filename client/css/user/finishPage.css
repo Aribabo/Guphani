@@ -1,0 +1,41 @@
+@import url('../reset.css'); /*리셋 css*/
+@import url('../common.css'); /*공통 css*/
+
+/* 로고 */
+#register4 .logo{width: 33%; padding: 7.142rem ;margin: 0 auto;}
+#register4 .inner-wrap{padding: 0 2.857rem; box-sizing: border-box;margin-bottom: 1.42rem; text-align: center;}
+
+/* 안내 메세지 */
+#register4 .txtBox {
+    margin-bottom: 7.142rem; 
+}
+#register4 .txt {
+    font-size: 1.714rem; 
+}
+#register4 .red-font {
+    color: var(--point-color); font-weight: bold;
+}
+/* 버튼 */
+#register4 .point-btn1 {display: inline-block;background: var(--point-color); width: 100%; border-radius: 3.571rem; color: var(--white-color); line-height: 4.285rem; height: 4.285rem; box-sizing: border-box; font-size: 1rem; font-weight: bold; text-align: center; margin-top: 0.714rem;
+}
+#finishChangePw .black-btn,
+#register4 .black-btn{ margin-top: 0.714rem}
+
+/* 로고 */
+#finishChangePw .logo{width: 33%; padding: 7.142rem ;margin: 0 auto;}
+#finishChangePw .inner-wrap{padding: 0 2.857rem; box-sizing: border-box;margin-bottom: 1.42rem; text-align: center;}
+
+/* 안내 메세지 */
+#finishChangePw .txtBox {
+    margin-bottom: 7.142rem; 
+}
+#finishChangePw .txt {
+    font-size: 1.285rem; 
+    font-weight: 500;
+}
+#finishChangePw .red-font {
+    color: var(--point-color); font-weight: bold;
+}
+/* 버튼 */
+#finishChangePw .point-btn1 {display: inline-block;background: var(--point-color); width: 100%; border-radius: 3.571rem; color: var(--white-color); line-height: 4.285rem; height: 4.285rem; box-sizing: border-box; font-size: 1rem; font-weight: bold; text-align: center; margin-top: 0.714rem;
+}

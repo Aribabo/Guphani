@@ -1,0 +1,18 @@
+#report119 .page-tit{margin-bottom: 1.428rem;}
+#report119 main{padding-bottom: 5.714rem;}
+#report119 .tit-sub{font-size: 1.285rem; font-weight: 500; margin-bottom: 1.428rem;}
+#report119 .grey-box {background-color: var(--gray-bg); padding: 2.142rem; border-radius: 1.2857rem; box-sizing: border-box;}
+#report119 .grey-box p {font-size: 1rem;}
+#report119 .checkbox-container {display: flex;align-items: center; margin-top: 1.428rem;}
+#report119 .checkbox-container label{margin-left: 0px;}
+#report119 .sec1-info{margin-top: 10px; font-size: 0.9rem;}
+#report119 input[type=checkbox].type1:checked + label{color: var(--point-color);}
+#report119 section + section{border-top: 1px solid var(--gray-color);}
+#report119 section:nth-child(2) .page-tit{margin-top: 2.857rem;}
+#report119 section:nth-child(2) button{margin-bottom: 0.714rem;}
+#report119 .list-link{display: block; text-align: right; font-size: 1rem;}
+#report119 .point-btn{display: flex; justify-content: space-between; align-items: center; padding: 0 2.857rem;}
+#report119 .big-text {font-size: 1.5em;color: var(--white-color);font-family: 'yg-jalnan', 'Pretendard' !important;}
+#report119 .small-text {font-size: 0.9em; color: var(--white-color); font-weight: 300;}
+#report119 button.point-btn {font-size: 0.928rem;margin: 3.714rem 0 2.857rem;font-family: 'yg-jalnan', 'Pretendard' !important;}
+#report119 .inner-wrap {padding: 0 2.857rem; box-sizing: border-box; background-color: var(--white-color); }
