@@ -26,7 +26,7 @@
 <img src="https://github.com/Aribabo/Guphani/assets/137020870/8d8dfb32-08cd-455b-a0ce-d69ba6b2adcc">
 
 
-<h3>🪄 기능 </h3>
+<h3>✨ 기능 </h3>
 
 * 주변 응급실 거리순으로 병원 정보 및 실시간 병상 정보 확인 가능 + 지도 표시
 * 특수 진료 가능 응급실 검색 및 거리순으로 실시간 정보 확인 가능
