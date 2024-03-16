@@ -38,10 +38,15 @@
 * 문의하기 기능 
 
 
-<h3>📱🖱🎬🗂 Play Store </h3>
+
+<h3>📲 다운로드 </h3>
+
+### ✔ [Google Play Store](https://play.google.com/store/apps/details?id=com.aram1.guphani)
+
+<img width="400" src="https://github.com/Aribabo/Guphani/assets/137020870/7887e492-cb95-4443-b205-5ea78c0977d5">
 
 
-<h3>📲 서비스 화면</h3>
+<h3>🖥 서비스 화면</h3>
 <p>
   <img width="910" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/e526fa32-07a4-482e-96e0-33afc4ac9aa0">
 
