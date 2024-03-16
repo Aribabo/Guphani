@@ -43,25 +43,27 @@
 
   * 일반 응급 검색시
     
-  <img width="680" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/942e9171-a2c4-4ba0-8194-7d15fe1270ac" height="500">
-
+  <img width="910" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/276c14af-f448-4fa6-b601-acf954b52ba7">
+  
+  
   * 특수 응급 검색시
 
-  <img width="916" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/95f00b6d-cab3-4aee-ad67-62b87c42e416">
+  <img width="910" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/96f8403a-c855-4664-8462-5463501f0d83">
+  
 
+  * 약국 검색시
 
+  <img width="910" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/b9db90a3-9f16-4e7a-a9c9-21bcd2daa6cf">
 
-* 약국 검색시
-<img width="693" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/c7e9a320-ac2b-4926-8f25-971e4a02e6cf" height="500">
+  
+  * 응급처치
 
-* 응급처치
+  <img width="910" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/203b4b4b-5693-408a-8537-f5b943de0f6e">
 
-<img width="680" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/37606275-76b8-43e0-af9c-c0bc2656dbad"  height="500">
+  
+  * 119 문자 신고 및 사설 구급차 연락
 
-* 119 문자 신고 및 사설 구급차 연락
-  <img width="898" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/5c99debc-5422-4808-aaa3-c0cc5bdcabe1">
-
-
+  <img width="910" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/7060c48b-5b62-41b9-bba0-9fffbe629e3d">
 
 </p>
 
