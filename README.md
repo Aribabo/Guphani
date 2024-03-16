@@ -23,7 +23,8 @@
 
  
 <h3>📌 사용 데이터셋 </h3>  
-<img src="https://github.com/Aribabo/Guphani/assets/137020870/8d8dfb32-08cd-455b-a0ce-d69ba6b2adcc">
+<img width="910" src="https://github.com/Aribabo/Guphani/assets/137020870/63ee1db6-d15f-4a42-b006-354063bd7123">
+
 
 
 <h3>✨ 기능 </h3>
