@@ -41,27 +41,23 @@
 <p>
   <img width="910" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/e526fa32-07a4-482e-96e0-33afc4ac9aa0">
 
-  * 일반 응급 검색시
+  <h4>◾ 일반 응급 검색시</h4>
     
   <img width="910" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/276c14af-f448-4fa6-b601-acf954b52ba7">
   
-  
-  * 특수 응급 검색시
+  <h4>◾ 특수 응급 검색시</h4>
 
   <img width="910" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/96f8403a-c855-4664-8462-5463501f0d83">
-  
 
-  * 약국 검색시
+  <h4>◾ 약국 검색시</h4>
 
   <img width="910" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/b9db90a3-9f16-4e7a-a9c9-21bcd2daa6cf">
 
-  
-  * 응급처치
+  <h4>◾ 응급처치</h4>
 
   <img width="910" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/203b4b4b-5693-408a-8537-f5b943de0f6e">
 
-  
-  * 119 문자 신고 및 사설 구급차 연락
+  <h4>◾ 119 문자 신고 및 사설 구급차 연락</h4>
 
   <img width="910" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/7060c48b-5b62-41b9-bba0-9fffbe629e3d">
 
