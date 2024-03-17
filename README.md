@@ -84,4 +84,7 @@
 <h3> 
   
   📰 자세한 내용은 [PPT](https://github.com/Aribabo/Guphani/blob/main/%EA%B8%89%ED%95%98%EB%8B%88-%ED%94%84%EB%A0%88%EC%A0%A0%ED%85%8C%EC%9D%B4%EC%85%98.pdf)에서 확인할 수 있습니다. 
+  <br><br>
+  ⭐ [이정흔 포트폴리오](https://aribabo.notion.site/399066a49983499c9a259bb3bf7b784d?pvs=4)에서 이력서와 다른 프로젝트 정보도 확인할 수 있습니다.
+  
 </h3>  
