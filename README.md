@@ -80,3 +80,8 @@
 
 <h3> 🛠️ 개발환경 및 툴 </h3>
 <img width="809" alt="image" src="https://github.com/Aribabo/Guphani/assets/137020870/882311f6-21e9-4f25-9e5c-69a2ee903947">
+
+<h3> 
+  
+  📰 자세한 내용은 [PPT](https://github.com/Aribabo/Guphani/blob/main/%EA%B8%89%ED%95%98%EB%8B%88-%ED%94%84%EB%A0%88%EC%A0%A0%ED%85%8C%EC%9D%B4%EC%85%98.pdf)에서 확인할 수 있습니다. 
+</h3>  
